@@ -9,6 +9,12 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,500&display=swap');
 
+@mixin smallSize {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
 *, 
 :after, 
 :before {
@@ -22,14 +28,13 @@ img {
 header {
     margin: 0 auto;
     padding: 30px 20px 20px;
-    max-width: 850px;
+    max-width: 800px;
 
     h1 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         font-size: 2.5rem;
         color: #333;
-        padding-left: 1.5rem;
     }
 
     p {
@@ -37,13 +42,13 @@ header {
         font-weight: 400;
         font-size: 1rem;
         color: #8f95a1;
-        padding-left: 1.5rem;
     }
 }
 
 main {
     margin: 0 auto;
-    max-width: 850px;
+    padding: 0 20px;
+    max-width: 800px;
 }
 
 .item {
@@ -52,7 +57,19 @@ main {
 
     &__wrap {
         margin-bottom: 5rem;
-        width: 40%;
+        width: 45%;
+
+        @include smallSize {
+            width: 100%;
+        }
+
+        &:nth-child(2n-1) {
+            margin-right: 10%;
+
+            @include smallSize {
+                margin-right: 0;
+            }
+        }
     }
 
     &__img {
@@ -64,6 +81,14 @@ main {
         &:hover {
             img {
                 transform: scale(1.05);
+            }
+        }
+
+        &.noLink {
+            &:hover {
+                img {
+                    transform: scale(1.0);
+                }
             }
         }
 
@@ -94,11 +119,46 @@ main {
     }
 
     &__detail {
-        margin-top: .5rem;
+        margin-top: 1.5rem;
         p {
             font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
-            font-size: .8rem;
+            font-size: .9rem;
             color: #333;
         }
+    }
+
+    &__tech {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: .7rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: .5rem;
+
+        span {
+            display: block;
+            margin: 0 .3rem .3rem 0;
+            border-radius: 1rem;
+            padding: .1rem .8rem;
+            background-color: #8f95a1;
+            color: #fff;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #191b1f;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+
+    p {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: .7rem;
+        color: #fff;
     }
 }
