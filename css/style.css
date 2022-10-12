@@ -5,13 +5,37 @@ Copyright 2014 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 http://yuilibrary.com/license/
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,500&display=swap');
 html {
   color: #000;
-  background: #FFF;
+  background: #fff;
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
   margin: 0;
   padding: 0;
 }
@@ -21,33 +45,51 @@ table {
   border-spacing: 0;
 }
 
-fieldset, img {
+fieldset,
+img {
   border: 0;
 }
 
-address, caption, cite, code, dfn, em, strong, th, var {
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
   font-style: normal;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-caption, th {
+caption,
+th {
   text-align: left;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   font-weight: normal;
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: '';
 }
 
-abbr, acronym {
+abbr,
+acronym {
   border: 0;
   font-variant: normal;
 }
@@ -60,7 +102,9 @@ sub {
   vertical-align: text-bottom;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -79,7 +123,7 @@ legend {
 :after,
 :before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
@@ -88,7 +132,7 @@ img {
 
 header {
   margin: 0 auto;
-  padding: 30px 20px 20px;
+  padding: 30px 20px 50px;
   max-width: 800px;
 }
 
@@ -117,7 +161,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .item__wrap {
@@ -145,32 +189,34 @@ main {
   display: block;
   overflow: hidden;
   border: 1px solid #e8e8e8;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .item__img:hover img {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .item__img.noLink:hover img {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .item__img img {
   -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  border-radius: .5rem;
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.5rem;
   width: 100%;
   height: auto;
 }
 
 .item__period {
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
-  font-size: .9rem;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ Pro',
+    'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'MS Pゴシック', 'MS PGothic',
+    sans-serif;
+  font-size: 0.9rem;
   margin-top: 1rem;
   color: #8f95a1;
 }
@@ -180,41 +226,50 @@ main {
 }
 
 .item__title h3 {
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ Pro',
+    'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'MS Pゴシック', 'MS PGothic',
+    sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #333;
 }
 
 .item__detail {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .item__detail p {
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
-  font-size: .9rem;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ Pro',
+    'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'MS Pゴシック', 'MS PGothic',
+    sans-serif;
+  font-size: 0.9rem;
   color: #333;
+}
+
+.item__detail small {
+  font-size: 11px;
 }
 
 .item__tech {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: .7rem;
+  font-size: 0.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: .5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .item__tech span {
   display: block;
-  margin: 0 .3rem .3rem 0;
+  margin: 0 0.3rem 0.3rem 0;
   border-radius: 1rem;
-  padding: .1rem .8rem;
-  background-color: #8f95a1;
-  color: #fff;
+  padding: 0.1rem 0.8rem;
+  background-color: rgb(51 65 85 / 0.9);
+  box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 5%);
+  color: #e2e8f0;
 }
 
 footer {
@@ -222,9 +277,9 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #191b1f;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgb(15 23 42);
   width: 100%;
   height: 100px;
   text-align: center;
@@ -234,7 +289,7 @@ footer p {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
